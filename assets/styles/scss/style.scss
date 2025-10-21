@@ -1,0 +1,146 @@
+/*******************************************
+ STYLESHEET
+********************************************/
+
+
+/**************************************
+
+NOTE BEFORE UPDATING !!!!!!!!!
+
+style.css is compiled using SASS from contents
+of the following three directories in the theme.  
+
+assets/styles/scss
+inc/blocks
+inc/parts
+
+If the compiled CSS file is manually changed the 
+scss files will be out of date.
+
+YOU HAVE BEEN WARNED!!
+
+**************************************/
+
+/*********************
+IMPORTING NORMALIZE
+This vendor file is loaded first
+*********************/
+
+// @import "vendor/normalize";
+
+
+/*********************
+IMPORTING FONT STYLES
+*********************/
+
+// @import "../../fonts/scss/fontawesome.scss";
+// @import "../../fonts/scss/regular.scss";
+// @import "../../fonts/scss/light.scss";
+// @import "../../fonts/scss/brands.scss";
+
+
+/*********************
+IMPORTING CONFIG AND HELPERS
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
+
+// @import "config/variables";
+// @import "helpers/functions";
+// @import "helpers/mixins";
+
+
+
+
+/*********************
+IMPORTING GLOBAL
+These files affect all pages
+*********************/
+
+// @import "global/typography";
+// @import "global/iconfont";
+// @import "global/base";
+// @import "global/alerts";
+// @import "global/buttons";
+// @import "global/forms";
+// @import "global/content_block_base";
+
+
+
+
+/*********************
+IMPORTING VIEWS
+views are styles for site specific pages or singles
+*********************/
+
+// @import "views/blog";
+// @import "views/single";
+
+
+
+
+/*********************
+IMPORTING VENDOR STYLES
+Pulls in any third party styles
+*********************/
+
+// @import "vendor/slick";
+
+
+
+
+/*********************
+IMPORTING PARTS
+Parts are like content blocks however used globally
+
+Refer to them in the /inc/parts/ location
+*********************/
+
+// @import "../../../inc/parts/header_simple/header_simple";
+// @import "../../../inc/parts/footer/footer";
+// @import "../../../inc/parts/social/social";
+// @import "../../../inc/parts/newsletter_subscribe/newsletter_subscribe";
+// @import "../../../inc/parts/modal/modal.scss";
+//@import "../../../inc/parts/page_banner_image/page_banner_image";
+
+
+
+
+/*********************
+IMPORTING BLOCKS
+Blocks are reusable 'legos' that are used for flexible page build using ACF.
+These must be imported last so they override any site wide styling
+
+Refer to them in their /inc/blocks/ location
+*********************/
+
+// script installed block import, do not touch this file
+// @import "views/blocks";
+
+// // Common use blocks
+// @import "../../../inc/blocks/page_banner/page_banner";
+// @import "../../../inc/blocks/multi_column/multi_column";
+// @import "../../../inc/blocks/grid_icon_list/grid_icon_list";
+// @import "../../../inc/blocks/promo_banner/promo_banner";
+// @import "../../../inc/blocks/latest_resources/latest_resources";
+// @import "../../../inc/blocks/testimonial/testimonial";
+// @import "../../../inc/blocks/related_resources/related_resources";
+// @import "../../../inc/blocks/form/form";
+// @import "../../../inc/blocks/form_thankyou/form_thankyou";
+
+// Manually loaded blocks
+
+
+
+/*********************
+Client Specific Overrides
+
+Single override file for client specific tweaks to theme global styles
+or common use block base styles.  Reference block class name in the block.
+
+DO NOT use this file for client specific blocks, use the blocks scss file.
+*********************/
+
+@import "variables";
+@import "map";
