@@ -1,0 +1,24 @@
+{
+  "name": "compete_inteactive_map",
+  "version": "1.0.0",
+  "description": "compete_inteactive_map theme",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --source-map true --output-style compressed assets/styles/scss/style.scss assets/styles/style.css",
+    "scss:login": "node-sass --source-map true --output-style compressed assets/styles/scss/login-style.scss assets/styles/login-style.css",
+    "scss:editor": "node-sass --source-map true --output-style compressed assets/styles/scss/editor-style.scss assets/styles/editor-style.css",
+    "scss:acf": "node-sass --source-map true --output-style compressed assets/styles/scss/acf-admin-style.scss assets/styles/acf-admin-style.css",
+    "watch:scss": "npm run scss -- --watch",
+    "dev:js": "uglifyjs assets/javascript/src/before-init/*.js assets/javascript/src/init.js assets/javascript/src/after-init/*.js -b --source-map url=theme.min.js.map -o assets/javascript/theme.min.js",
+    "devwatch:js": "watch 'npm run dev:js' assets/javascript/src",
+    "js": "uglifyjs assets/javascript/src/before-init/*.js assets/javascript/src/init.js assets/javascript/src/after-init/*.js -c -m --source-map url=theme.min.js.map -o assets/javascript/theme.min.js",
+    "watch:js": "watch 'npm run js' assets/javascript/src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "uglify-js": "^3.2.2",
+    "watch": "^1.0.2"
+  }
+}
