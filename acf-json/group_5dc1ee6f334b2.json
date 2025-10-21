@@ -1,0 +1,112 @@
+{
+    "key": "group_5dc1ee6f334b2",
+    "title": "Region Settings",
+    "fields": [
+        {
+            "key": "field_5dc1efa17afb7",
+            "label": "Region Image",
+            "name": "region_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Upload the corresponding image for the region. Appears when a region from the overview map is clicked on.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5dc1f1dc1edec",
+            "label": "Map Paths",
+            "name": "map_paths",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Paste the SVG path elements that correspond to the map region and its placement on the larger overview map.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_679bc7ff88e35",
+            "label": "Region Intro",
+            "name": "region_intro",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5dd6f916b60c0",
+            "label": "Region Content",
+            "name": "region_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Additional content that will appear alongside the region map underneath the map key.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "regions"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1738262613
+}

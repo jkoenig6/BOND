@@ -1,0 +1,181 @@
+{
+    "key": "group_5dcd6b3102413",
+    "title": "School Settings",
+    "fields": [
+        {
+            "key": "field_6411116dec42f",
+            "label": "Marker Override",
+            "name": "marker_override",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "This will link the map pin to an external page instead of opening a modal.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_64111199ec430",
+                    "label": "",
+                    "name": "link_external",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Link pin to external page",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_641111b9ec431",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64111199ec430",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_5dcd6b9700401",
+            "label": "School Type",
+            "name": "school_type",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "elementary_school": "Elementary School",
+                "middle_school": "Middle School",
+                "high_school": "High School",
+                "charter_school": "Charter School",
+                "mental_health": "Mental Health Facility",
+                "k_8": "K-8"
+            },
+            "default_value": "elementary_school",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5dcd6c1255a18",
+            "label": "Marker Coordinates",
+            "name": "marker_coordinates",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Paste the coordinates for the school's map marker so that it appears in the correct place on the region map",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33334",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5dd6c9ca3b567",
+            "label": "Title Attributes",
+            "name": "title_attributes",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Paste the x and y coordinates for the school's title so that it appears in the correct place on the region map as well as width and height for sizing",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33334",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_63ebe8df7a104",
+            "label": "Title Alignment",
+            "name": "title_alignment",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33334",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Center",
+                "left": "Left"
+            },
+            "default_value": "center",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "schools"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1678840340
+}
